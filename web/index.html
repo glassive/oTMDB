@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>oTMDB</title>
 </head>
 
 <body>
+    <header>
+        <h1>osu!Taiko Mappool Database</h1>
+    </header>
     <main>
         <div id="toolbar">
             <select id="selectTournament">
@@ -15,8 +18,19 @@
             </select>
             <select id="selectMappool"></select>
             <label>
-                <input type="checkbox" id="supporterCheckbox"> Supporter (changes links)
-            </label>         
+                <input type="checkbox" id="supporterCheckbox"> osu!direct
+            </label>
+            <div id="themeSelector">
+                <label>
+                    <input type="radio" name="theme" value="pastel" checked> Pastel
+                </label>
+                <label>
+                    <input type="radio" name="theme" value="vibrant"> Vibrant
+                </label>
+                <label>
+                    <input type="radio" name="theme" value="monochrome"> Monochrome
+                </label>
+            </div>
         </div>
     
         <table id="pool"></table>

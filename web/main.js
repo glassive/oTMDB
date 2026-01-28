@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                     option.textContent = mappool;
                     selectMappool.appendChild(option);
                 });
+                // trigger mappool change event to display the first pool
+                selectMappool.dispatchEvent(new Event('change'));
             }
         });
         
@@ -100,7 +102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     const values = [
                         `${mapData.artist} - ${mapData.title} [${mapData.version}]`,
                         mapData.mapper,
-                        `${sr}${dtArrow}`,
+                        `${sr}★${dtArrow}`,
                         `${od}${dtArrow}`,
                         `${hp}${dtArrow}`,
                         Math.round(mapData.bpm * dtMultiplier),
@@ -149,6 +151,21 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Refresh the table to update links
             selectMappool.dispatchEvent(new Event('change'));
         });
+
+        // Handle theme selection
+        const themeRadios = document.querySelectorAll('input[name="theme"]');
+        themeRadios.forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                const theme = e.target.value;
+                document.body.className = `theme-${theme}`;
+                localStorage.setItem('selectedTheme', theme);
+            });
+        });
+
+        // Load saved theme or set default
+        const savedTheme = localStorage.getItem('selectedTheme') || 'pastel';
+        document.body.className = `theme-${savedTheme}`;
+        document.querySelector(`input[name="theme"][value="${savedTheme}"]`).checked = true;
     } catch (error) {
         console.error('Error loading JSON files:', error);
     }
