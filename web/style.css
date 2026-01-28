@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Google Sans Code';
+    src: url('/assets/GoogleSansCode-VariableFont_wght.ttf');
+    font-display: swap;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans Code";
+    color: #e7e7e7;
+}
+
+body {
+    background-color: #1d1d1d;
+}
+
+main {
+    margin: 80px;
+}
+
+table {
+    font-size: 13px;
+    border-spacing: 4px 4px;
+    margin-bottom: 30px;
+}
+
+#toolbar {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#toolbar label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+select {
+    font-size: 15px;
+    background-color: hsl(0, 5%, 31%);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+option {
+    background-color: hsl(0, 5%, 31%);
+}
+
+option:hover {
+    background-color: blue;
+}
+
+button {
+    cursor: default;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.356);
+    font-size: 20px;
+    background-color: hsl(0, 4%, 35%);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.05s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+    transform: scale(1.03) rotate(2deg);
+}
+
+button:disabled {
+    filter: brightness(70%);
+}
+
+#refreshBtn {
+    margin-left: 20px;
+}
+
+td {
+    /* background-color: hsl(0, 5%, 31%); */
+    border-radius: 10px;
+    padding: 10px;
+    a {text-decoration: none;}
+}
+
+/* Row coloring by slot type */
+tr.nm td{ background-color: hsl(0, 0%, 31%);}
+tr.hd td{ background-color: hsl(60, 15%, 31%);}
+tr.hr td{ background-color: hsl(0, 15%, 31%);}
+tr.dt td{ background-color: hsl(270, 15%, 31%);}
+tr.fm td{ background-color: hsl(113, 15%, 31%);}
+tr.tb td{ background-color: hsl(295, 15%, 31%);}
