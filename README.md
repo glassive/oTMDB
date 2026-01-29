@@ -21,7 +21,7 @@ Tournament JSON template:
         "forum": "https://link-to-forum.post",
         "mappools": {
             "Stage Name": {
-                "NM1": ,
+                "NM1": 4092828,
                 "NM2": 4092828,
                 "NM3": 4092828,
                 "NM4": 4092828,
