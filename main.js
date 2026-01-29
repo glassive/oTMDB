@@ -25,9 +25,9 @@ function setTournamentInUrl(tournament) {
 // load pools.json and maps.json on page load
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const poolsResponse = await fetch('/data/pools.json');
+        const poolsResponse = await fetch('data/pools.json');
         poolsData = await poolsResponse.json();
-        const mapsResponse = await fetch('/data/maps.json');
+        const mapsResponse = await fetch('data/maps.json');
         mapsData = await mapsResponse.json();
         const mappoolCount = Object.values(poolsData).reduce((sum, t) => sum + Object.keys(t.mappools).length, 0);
         subtitle.textContent = `${Object.keys(poolsData).length} tournaments, ${mappoolCount} mappools, ${Object.keys(mapsData).length} maps`
