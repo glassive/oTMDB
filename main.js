@@ -51,8 +51,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (poolsData[selectedTournament].forum) {
                     forumLink.href = poolsData[selectedTournament].forum;
                     forumLink.style.display = 'inline';
+                    forumLink.onclick = () => {
+                        window.open(poolsData[selectedTournament].forum, '_blank');
+                    };
                 } else {
                     forumLink.style.display = 'none';
+                    forumLink.onclick = null;
                 }
                 Object.keys(poolsData[selectedTournament].mappools).forEach(mappool => {
                     const option = document.createElement('option');
