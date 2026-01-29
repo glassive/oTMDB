@@ -155,9 +155,11 @@ body.theme-classic tr.ex td{ background-color: hsl(192, 15%, 31%);}
 body.theme-classic tr.ht td{ background-color: hsl(35, 15%, 31%);}
 
 /* Vibrant Theme */
-body.theme-vibrant tr.nm td{ background-color: hsl(0, 0%, 45%);}
-body.theme-vibrant tr.hd td{ background-color: hsl(290, 41%, 90%);}
-body.theme-vibrant tr.hr td{ background-color: hsl(296, 18%, 83%);}
-body.theme-vibrant tr.dt td{ background-color: hsl(278, 4%, 73%);}
-body.theme-vibrant tr.fm td{ background-color: hsl(248, 4%, 59%);}
-body.theme-vibrant tr.tb td{ background-color: hsl(356, 45%, 85%);}
+body.theme-vibrant tr.nm td{ background-color: hsl(0, 0%, 41%);}
+body.theme-vibrant tr.hd td{ background-color: hsl(60, 35%, 31%);}
+body.theme-vibrant tr.hr td{ background-color: hsl(0, 35%, 31%);}
+body.theme-vibrant tr.dt td{ background-color: hsl(270, 35%, 31%);}
+body.theme-vibrant tr.fm td{ background-color: hsl(113, 35%, 31%);}
+body.theme-vibrant tr.tb td{ background-color: hsl(295, 35%, 31%);}
+body.theme-vibrant tr.ex td{ background-color: hsl(192, 35%, 31%);}
+body.theme-vibrant tr.ht td{ background-color: hsl(35, 35%, 31%);}
