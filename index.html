@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link id="favicon" rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -9,7 +10,8 @@
 
 <body>
     <header>
-        <h1>osu!Taiko Mappool Database</h1>
+        <h1>osu!taiko Mappool Database</h1>
+        <h2 id="subtitle"></h2>
     </header>
     <main>
         <div id="toolbar">
@@ -20,21 +22,25 @@
             <label>
                 <input type="checkbox" id="supporterCheckbox"> osu!direct
             </label>
+            <a id="forumLink" href="#" target="_blank" style="display: none; text-decoration: none;">
+                <button>Forum Post</button>
+            </a>
             <div id="themeSelector">
                 <label>
-                    <input type="radio" name="theme" value="pastel" checked> Pastel
+                    <input type="radio" name="theme" value="classic" checked> Classic
                 </label>
                 <label>
                     <input type="radio" name="theme" value="vibrant"> Vibrant
                 </label>
-                <label>
-                    <input type="radio" name="theme" value="monochrome"> Monochrome
-                </label>
             </div>
         </div>
-    
+
         <table id="pool"></table>
     </main>
+
+    <footer>
+        <p style="text-align: center;"> Made by Glassive. <a target="_blank" href="https://github.com/glassive/oTMDB">GitHub</a></p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
