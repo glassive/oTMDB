@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         td.textContent = value;
                         // apply cover image as background for the Map cell (first column)
                         if (index === 0 && mapData.cover) {
-                            td.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.40)), url('${mapData.cover}_2x')`;
+                            td.style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.50)), url('${mapData.cover}')`;
                             td.style.backgroundSize = 'cover';
                             td.style.backgroundPosition = 'center';
                             td.style.color = '#fff';
