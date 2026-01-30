@@ -15,9 +15,9 @@ python .\tools\update.py <id> <secret>
 
 [ossapi docs](https://tybug.dev/ossapi/index.html)
 
-todo: refer to [ikin's repo](https://github.com/ikin5050/osuPoolCheck) for tournament data
+refer to [ikin's repo](https://github.com/ikin5050/osuPoolCheck) for tournament data
 
-consider db exporting later on for convenience (mysql or sqlite)
+
 
 Tournament JSON template:
 ```json
@@ -56,4 +56,6 @@ Many older tournaments will have a handful of missing maps. I try to manually ch
 ##To-do
 
 - Search feature (by artist, title, mapper, version, tags)
+- consider db exporting later on (mysql or sqlite)
+- consistent scrollbar across browsers?
 - get a better exhaustive tournament list
