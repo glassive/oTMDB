@@ -53,7 +53,7 @@ Tournament JSON template:
 
 Many older tournaments will have a handful of missing maps. I try to manually check most of them, but if you happen to find a map that was marked as missing, please let me know.
 
-##To-do
+## To-do
 
 - Search feature (by artist, title, mapper, version, tags)
 - consider db exporting later on (mysql or sqlite)
