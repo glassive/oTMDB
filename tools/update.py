@@ -1,8 +1,14 @@
 import sys
 sys.dont_write_bytecode = True
 import json
+import argparse
 from ossapi import Ossapi
-api = Ossapi(int(input("Your osu! OAuth API ID: ")), str(input("Your osu! OAuth API Secret: ")))
+
+parser = argparse.ArgumentParser(description="Fetch osu! beatmap metadata for tournament mappools")
+parser.add_argument("client_id", type=int, help="osu! OAuth client ID")
+parser.add_argument("client_secret", help="osu! OAuth client secret")
+args = parser.parse_args()
+api = Ossapi(args.client_id, args.client_secret)
 
 class Map:
     def __init__(self, id: int):

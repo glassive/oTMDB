@@ -21,6 +21,21 @@ function setTournamentInUrl(tournament) {
     if (tournament) {params.set('tn', tournament)} else {params.delete('tn')}
     window.history.replaceState({}, '', `${window.location.pathname}?${params}`);
 }
+// get mappool from URL parameter
+function getMappoolFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('mp');
+}
+// set mappool in URL
+function setMappoolInUrl(mappool) {
+    const params = new URLSearchParams(window.location.search);
+    if (mappool) {
+        params.set('mp', mappool);
+    } else {
+        params.delete('mp');
+    }
+    window.history.replaceState({}, '', `${window.location.pathname}?${params}`);
+}
 
 // load pools.json and maps.json on page load
 document.addEventListener('DOMContentLoaded', async () => {
@@ -65,6 +80,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                     selectMappool.appendChild(option);
                 });
                 // trigger mappool change event to display the first pool
+                const mappoolFromUrl = getMappoolFromUrl();
+                if (
+                    mappoolFromUrl &&
+                    poolsData[selectedTournament].mappools[mappoolFromUrl]
+                ) {
+                    selectMappool.value = mappoolFromUrl;
+                }
+                // trigger mappool change event
                 selectMappool.dispatchEvent(new Event('change'));
             }
         });
@@ -73,6 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         selectMappool.addEventListener('change', () => {
             const selectedTournament = selectTournament.value;
             const selectedMappool = selectMappool.value;
+            setMappoolInUrl(selectedMappool);
             poolTable.innerHTML = '';
             
             if (selectedTournament && selectedMappool && poolsData[selectedTournament]) {

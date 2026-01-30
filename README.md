@@ -1,12 +1,17 @@
 ## osu!taiko Mappool Database
 
-How to use [update.py](/tools/update.py):
+How to use the scripts in [/tools](/tools/):
 ```shell
 cd tools
 py -m venv .venv; .venv\scripts\activate; pip install -r .\requirements.txt
-```
 
-Run the script. This will fetch all map data corresponding to the mappools in [pools.json](/data/pools.json).
+# extract a tournament from a wiki page (only works with tournaments referenced in the wiki)
+python .\tools\extract_pools.py "https://osu.ppy.sh/wiki/en/Tournaments/GTS/IGTS_2022" "IGTS 2022" -o igts2022.json
+# then, append the output to pools.json
+
+# fetch all maps from the new pools.json
+python .\tools\update.py <id> <secret>
+```
 
 [ossapi docs](https://tybug.dev/ossapi/index.html)
 
