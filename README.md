@@ -1,5 +1,9 @@
 ## osu!taiko Mappool Database
 
+### Disclaimer
+yes a lot of this is shitty filler ChatGPT code, I couldn't be bothered to make it clean yet, and the main goal of this is to have a full list of mappools anyway.
+also it will take quite a while to reference nearly every taiko tournament
+
 How to use the scripts in [/tools](/tools/):
 ```shell
 cd tools
