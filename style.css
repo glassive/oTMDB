@@ -179,3 +179,30 @@ body.theme-vibrant tr.fm td{ background-color: hsl(113, 35%, 31%);}
 body.theme-vibrant tr.tb td{ background-color: hsl(295, 35%, 31%);}
 body.theme-vibrant tr.ex td{ background-color: hsl(192, 35%, 31%);}
 body.theme-vibrant tr.ht td{ background-color: hsl(35, 35%, 31%);}
+
+
+
+/* Universal scrollbar styling */
+.custom-scrollbar {
+  scrollbar-width: 15px;
+  scrollbar-color: #acacac #ffffff00;
+  overflow: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 15px;
+  height: 1px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff00;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ffffff00;
+  border-radius: 20px;
+  border: 3px solid #ffffff00;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff00;
+}   
