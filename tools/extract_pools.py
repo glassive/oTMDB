@@ -7,8 +7,10 @@ MOD_PREFIX = {
     "NoMod": "NM",
     "Hidden": "HD",
     "HardRock": "HR",
+    "Hidden+HardRock": "HDHR",
     "DoubleTime": "DT",
     "FreeMod": "FM",
+    "ForceMod": "FM",
     "Tiebreaker": "TB",
     "HalfTime": "HT",
     "EX": "EX"

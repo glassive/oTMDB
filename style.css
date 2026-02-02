@@ -164,6 +164,7 @@ td.dt-affected {
 body.theme-classic tr.nm td{ background-color: hsl(0, 0%, 31%);}
 body.theme-classic tr.hd td{ background-color: hsl(50, 15%, 31%);}
 body.theme-classic tr.hr td{ background-color: hsl(0, 15%, 31%);}
+body.theme-classic tr.hdhr td{ background-color: hsl(25, 15%, 31%);}
 body.theme-classic tr.dt td{ background-color: hsl(270, 15%, 31%);}
 body.theme-classic tr.fm td{ background-color: hsl(113, 15%, 31%);}
 body.theme-classic tr.tb td{ background-color: hsl(295, 15%, 31%);}
@@ -174,6 +175,7 @@ body.theme-classic tr.ht td{ background-color: hsl(35, 15%, 31%);}
 body.theme-vibrant tr.nm td{ background-color: hsl(0, 0%, 41%);}
 body.theme-vibrant tr.hd td{ background-color: hsl(50, 35%, 31%);}
 body.theme-vibrant tr.hr td{ background-color: hsl(0, 35%, 31%);}
+body.theme-vibrant tr.hdhr td{ background-color: hsl(25, 35%, 31%);}
 body.theme-vibrant tr.dt td{ background-color: hsl(270, 35%, 31%);}
 body.theme-vibrant tr.fm td{ background-color: hsl(113, 35%, 31%);}
 body.theme-vibrant tr.tb td{ background-color: hsl(295, 35%, 31%);}

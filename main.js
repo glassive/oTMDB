@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     if (!mapData) return;
                     const row = document.createElement('tr');
                     // add color class based on slot type
-                    const slotTypes = ['NM', 'HD', 'HR', 'DT', 'FM', 'HT', 'EZ', 'TB', 'EX'];
+                    const slotTypes = ['HDHR', 'NM', 'HD', 'HR', 'DT', 'FM', 'HT', 'EZ', 'TB', 'EX'];
                     for (const slotType of slotTypes) {
                         if (slot.startsWith(slotType)) {
                             row.classList.add(slotType.toLowerCase());
